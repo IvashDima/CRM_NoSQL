@@ -33,7 +33,6 @@ def remove_contacts(contact_name: str):
     return {"message": "successful"}
 
 
-# class CoreFunctions():
 fake_users_db = {
     "johndoe": {
         "username": "johndoe",

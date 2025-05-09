@@ -1,8 +1,6 @@
 from api import app
 from fastapi.testclient import TestClient
 
-from core.models import ContactModel
-
 client = TestClient(app)
 
 def test_api_access():

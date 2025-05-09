@@ -8,7 +8,7 @@ class Base(BaseModel):
     created: datetime = Field(default=currentdatetime)
 
 class ContactModel(Base):
-    name: str = Field(max_length=50)#(max=50)
+    name: str = Field(max_length=50)
     gender: str
     age: int
     email: EmailStr = Field(examples=['marcelo@mail.com'])
@@ -23,14 +23,3 @@ class User(BaseModel):
 
 class UserInDB(User):
     hashed_password: str
-
-
-# from email_validator import validate_email, EmailNotValidError
-
-# email = "my+address@example.org"
-
-# try:
-#   emailinfo = validate_email(email, check_deliverability=False)
-#   email = emailinfo.normalized
-# except EmailNotValidError as e:
-#   print(str(e))
