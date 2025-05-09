@@ -1,58 +1,128 @@
-# crm_nosql
+# BackEnd for CRM with NoSQL DB
 
-# CRM_NOSQL
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.95.1-009688?style=for-the-badge&logo=fastapi)
+![MongoDB](https://img.shields.io/badge/MongoDB-6.0-green?style=for-the-badge&logo=mongodb)
+![Pytest](https://img.shields.io/badge/Pytest-7.2.0-yellow?style=for-the-badge&logo=pytest)
+![License](https://img.shields.io/badge/License-Educational-lightgrey?style=for-the-badge)
 
-CRM_NOSQL is a Customer relationship management system, which helps to hold contact's databases and fixes the history of all actions with them. 
+---
 
-# Description:
+## 📌 Overview
 
-CRM_NOSQL allows to:
-- login by user
-- store contact's data in MongoDB database,
-- have access via api,
-- read, create, edit, delete data.
+**CRM_NoSQL** is a lightweight Customer Relationship Management (CRM) system designed to manage contacts and track interaction history. Built with **FastAPI** and **MongoDB**, it offers a RESTful API for efficient data operations.
 
-## Installation
+---
 
-Install the MongoDB: use the [documentation](https://www.mongodb.com/docs/manual/installation/) and follow the tutorial to install MongoDB on your computer based on the operating system you use.
+## 🚀 Features
 
-Install the MongoDB shell to be able to interact with the database from a terminal, follow the installation terminal [here](https://www.mongodb.com/docs/mongodb-shell/install/).
+- 🔐 User authentication
+- 📇 Contact management (CRUD operations)
+- 📁 MongoDB integration for data storage
+- 🌐 RESTful API endpoints
+- 🧪 Unit and API testing with Pytest
 
-Run:
-pip install -r requirements.txt
+---
 
-## Usage
+## 🛠️ Tech Stack
 
-1. Run:
-python main.py  
-to run api server.
+- **Backend:** Python 3.10, FastAPI
+- **Database:** MongoDB 6.0
+- **Testing:** Pytest
+- **Logging:** Built-in logging module
 
-2. You can checks methods via  Swagger: 
-http://localhost:4558/docs#/
+---
 
-3. Connect to the database from a terminal to check data in MongoDB.
-Run the following commands:
+## ⚙️ Installation
 
-mongosh
-use CrmDatabase
-db.contacts.find()
+### Prerequisites
 
-4. Show log: Log file is located in the root folder of the application with name: my_log_{currentdate}.log.
+- Python 3.10+
+- MongoDB 6.0+
 
-5. Run TESTs: 
-pytest -v test_api.py
+### Steps
 
-## Support
+1. **Clone the repository:**
 
-Feel free to contact me by e-mail at dnytsyk@gmail.com if you have any questions related to my project.
+   ```bash
+   git clone https://github.com/IvashDima/CRM_NoSQL.git
+   cd CRM_NoSQL
 
-## Roadmap
+2. **Create a virtual environment and activate it:**
 
-In future releases, I will plan to add features:
-- graphic user interface,
-- clients products,
-- functional users and roles.
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-## Authors and acknowledgment
+3. **Install dependencies:**
 
-I appreciate my teachers in ReDI school teaching me and support while creating the project.
+   ```bash
+   pip install -r requirements.txt
+
+4. **Start MongoDB: Ensure MongoDB is running on its default port.**
+
+5. **Run the application:**
+
+   ```bash
+   python main.py
+
+6. **Access the API documentation:**
+
+Open your browser and navigate to http://localhost:4558/docs#/ to explore the interactive API docs.
+
+---
+
+## 🧪 Testing
+
+**Run unit and API tests using Pytest:**
+
+   ```bash
+   pytest -v test_api.py
+   ```
+
+---
+
+## 📂 Project Structure
+
+   ```text
+   CRM_NoSQL/
+   ├── core/               # Core logic and utilities
+   ├── logs/               # Log files
+   ├── src/                # Source code
+   ├── tests/              # Test cases
+   ├── main.py             # Entry point of the application
+   ├── requirements.txt    # Python dependencies
+   └── README.md           # Project documentation
+   ```
+
+---
+
+## 📸 Screenshots
+
+---
+
+## 📌 Important Notes
+
+- **Educational Purpose:** This project was developed as a final assignment for a Back-End Development course. It serves as a demonstration of integrating FastAPI with MongoDB.
+
+- **Not Production-Ready:** While functional, this application is not optimized for production environments. Features like advanced security, scalability, and error handling may need enhancements.
+
+- **Feedback Welcome:** Contributions, suggestions, and feedback are appreciated to improve the project further.
+
+---
+
+## 📫 Contact
+
+- **GitHub:** [IvashDima](https://github.com/IvashDima/)
+- **LinkedIn:** [Dmytro Ivashchenko](https://www.linkedin.com/in/dmytro-ivashchenko/)
+- **Email:** dnytsyk@gmail.com
+
+Feel free to reach out for questions, suggestions, or collaborations!
+
+---
+
+## 📝 License
+
+This project is provided for educational purposes only and does not have a specific license.
+
+Feel free to contribute, suggest improvements, or fork the project! 🚀
