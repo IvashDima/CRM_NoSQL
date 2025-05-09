@@ -6,13 +6,11 @@
 ![Pytest](https://img.shields.io/badge/Pytest-7.2.0-yellow?style=for-the-badge&logo=pytest)
 ![License](https://img.shields.io/badge/License-Educational-lightgrey?style=for-the-badge)
 
----
 
 ## 📌 Overview
 
 **CRM_NoSQL** is a lightweight Customer Relationship Management (CRM) system designed to manage contacts and track interaction history. Built with **FastAPI** and **MongoDB**, it offers a RESTful API for efficient data operations.
 
----
 
 ## 🚀 Features
 
@@ -22,7 +20,6 @@
 - 🌐 RESTful API endpoints
 - 🧪 Unit and API testing with Pytest
 
----
 
 ## 🛠️ Tech Stack
 
@@ -31,7 +28,6 @@
 - **Testing:** Pytest
 - **Logging:** Built-in logging module
 
----
 
 ## ⚙️ Installation
 
@@ -70,7 +66,6 @@
 
 Open your browser and navigate to http://localhost:4558/docs#/ to explore the interactive API docs.
 
----
 
 ## 🧪 Testing
 
@@ -80,7 +75,6 @@ Open your browser and navigate to http://localhost:4558/docs#/ to explore the in
    pytest -v test_api.py
    ```
 
----
 
 ## 📂 Project Structure
 
@@ -95,11 +89,9 @@ Open your browser and navigate to http://localhost:4558/docs#/ to explore the in
    └── README.md           # Project documentation
    ```
 
----
 
-## 📸 Screenshots
+[//]: # (## 📸 Screenshots)
 
----
 
 ## 📌 Important Notes
 
@@ -109,7 +101,6 @@ Open your browser and navigate to http://localhost:4558/docs#/ to explore the in
 
 - **Feedback Welcome:** Contributions, suggestions, and feedback are appreciated to improve the project further.
 
----
 
 ## 📫 Contact
 
@@ -119,7 +110,6 @@ Open your browser and navigate to http://localhost:4558/docs#/ to explore the in
 
 Feel free to reach out for questions, suggestions, or collaborations!
 
----
 
 ## 📝 License
 
